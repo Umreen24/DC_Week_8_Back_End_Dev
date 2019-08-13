@@ -1,0 +1,26 @@
+
+<html>
+<head></head>
+
+<body>
+
+    <h1>Blog Posts</h1>
+
+    {{> main-menu}}
+
+    <br/>
+    <br/>
+
+    <form action='/edit-post' method='POST'>    
+
+        <h3>Enter Post ID to Change: <input type='text' name='blogid' placeholder='Enter post ID'/> 
+        <h3>New Post Title: <input type='text' name='title' placeholder='Enter new title'/>
+        <h3>New Meta Description: <input type='text' name='subtitle' placeholder='Enter new subtitle'/>
+        <h3>New Post Body: <input type='text' name='description' placeholder='Enter new post body'/><br/><br/>
+        <button>Save Post</button>
+
+    </form>
+
+</body>
+
+</html>

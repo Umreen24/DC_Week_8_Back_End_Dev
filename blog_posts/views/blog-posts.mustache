@@ -1,0 +1,32 @@
+
+<html>
+<head></head>
+
+<body>
+
+    <h1>Blog Posts</h1>
+
+    {{> edit-post-menu}}
+
+    <br/>
+    <br/>
+
+    {{#blogs}}
+
+        <form action='/delete-post' method='POST'>    
+
+            <input type='hidden' name='blogid' value='{{blogid}}'/>
+            <h2>{{title}}</h2>
+            <h3>{{subtitle}}</h3>
+            <h5>{{created}}</h5>
+            <p>{{body}}</h3>
+            <h5>Blog ID: {{blogid}}</h5>
+            <button>Delete Post</button>
+
+        </form>
+
+    {{/blogs}}
+
+</body>
+
+</html>

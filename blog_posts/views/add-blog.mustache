@@ -1,0 +1,25 @@
+
+<html>
+<head></head>
+
+<body>
+
+    <h1>Create a New Post:</h1>
+
+    {{> main-menu}}
+
+    <br/>
+    <br/>
+
+    <form action='/add-blog' method='POST'>
+
+        <h3>Post Title: <input type='text' name='title' placeholder='Enter post title'/>
+        <h3>Meta Description: <input type='text' name='subtitle' placeholder='Enter subtitle'/>
+        <h3>Post Body: <input type='text' name='description' placeholder='Enter post body'/><br/><br/>
+        <button>Save Post</button>
+    
+    </form>
+
+</body>
+
+</html>
